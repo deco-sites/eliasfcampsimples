@@ -3098,6 +3098,17 @@
         "url": "/"
       },
       {
+        "__resolveType": "site/sections/PartialImageGallery.tsx",
+        "title": "Galeria de Imagens",
+        "images": [
+          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/1a51f8ec-345f-42b6-b505-8263f5bd6e79",
+          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/59026d4d-80e7-4dfb-b44b-685633e9ac2a",
+          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/254c87d0-ca68-4887-9f2b-6baedf686f38",
+          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/d0b909ca-3b33-47ef-b91c-a83075d59fab"
+        ],
+        "quantity": 3
+      },
+      {
         "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
         "content": [
           {
@@ -3255,6 +3266,7 @@
         }
       },
       {
+        "title": "Best Sellers",
         "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
         "tabs": [
           {
@@ -3280,7 +3292,6 @@
             }
           }
         ],
-        "title": "Best Sellers",
         "layout": {
           "headerfontSize": "Large",
           "headerAlignment": "center"
@@ -3290,8 +3301,8 @@
         }
       },
       {
-        "title": "Blogposts",
         "__resolveType": "site/sections/Content/BlogPosts.tsx",
+        "title": "Blogposts",
         "posts": [
           {
             "alt": "Item of the Summer",
