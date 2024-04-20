@@ -2584,8 +2584,8 @@
   "navbar": {
     "items": [
       {
-        "url": "/feminino",
-        "name": "Feminino",
+        "url": "/culturas",
+        "name": "Culturas",
         "@type": "SiteNavigationElement",
         "image": [
           {
@@ -2593,29 +2593,11 @@
             "@type": "ImageObject"
           }
         ],
-        "children": [
-          {
-            "url": "/feminino/saias",
-            "name": "Novidades",
-            "@type": "SiteNavigationElement",
-            "children": [
-              {
-                "url": "/feminino/vestidos",
-                "name": "Mais vendidos",
-                "@type": "SiteNavigationElement"
-              },
-              {
-                "url": "/feminino/vestidos",
-                "name": "Parcerias",
-                "@type": "SiteNavigationElement"
-              }
-            ]
-          }
-        ]
+        "children": []
       },
       {
-        "url": "/masculino",
-        "name": "Masculino",
+        "url": "/quem-somos",
+        "name": "Quem Somos",
         "@type": "SiteNavigationElement",
         "image": [
           {
@@ -2623,77 +2605,7 @@
             "@type": "ImageObject"
           }
         ],
-        "children": [
-          {
-            "url": "/masculino",
-            "name": "Novidades",
-            "@type": "SiteNavigationElement",
-            "children": [
-              {
-                "url": "/masculino",
-                "name": "Mais vendidos",
-                "@type": "SiteNavigationElement"
-              },
-              {
-                "url": "/masculino",
-                "name": "Parcerias",
-                "@type": "SiteNavigationElement"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "url": "/sale",
-        "name": "Sale",
-        "@type": "SiteNavigationElement",
-        "image": [
-          {
-            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/5e9310c0-c725-4643-ade3-f92a505bd1d6",
-            "@type": "ImageObject"
-          }
-        ],
-        "children": [
-          {
-            "url": "/feminino",
-            "name": "Feminino",
-            "@type": "SiteNavigationElement",
-            "children": [
-              {
-                "url": "/feminino",
-                "name": "Camisetas",
-                "@type": "SiteNavigationElement"
-              },
-              {
-                "url": "/feminino",
-                "name": "Camisas",
-                "@type": "SiteNavigationElement"
-              }
-            ]
-          },
-          {
-            "url": "/masculino",
-            "name": "Masculino",
-            "@type": "SiteNavigationElement",
-            "children": [
-              {
-                "url": "/masculino",
-                "name": "Camisetas",
-                "@type": "SiteNavigationElement"
-              },
-              {
-                "url": "/masculino",
-                "name": "Regatas",
-                "@type": "SiteNavigationElement"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "url": "/linktree",
-        "name": "Link Tree",
-        "@type": "SiteNavigationElement"
+        "children": []
       }
     ],
     "__resolveType": "commerce/loaders/navbar.ts"
