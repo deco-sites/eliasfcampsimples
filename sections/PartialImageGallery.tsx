@@ -14,7 +14,7 @@ export default function PartialImageGallery({
   title,
 }: Props) {
   return (
-    <div>
+    <div className="pt-3 pb-3">
       <div className="flex flex-wrap gap-2 md:gap-4 justify-center">
         {images.slice(0, quantity).map((image, index) => {
           return (
@@ -36,7 +36,7 @@ export default function PartialImageGallery({
       {quantity < images.length && (
         <div className="flex justify-center items-center">
           <button
-            className="btn btn-primary"
+            className="btn btn-primary m-3"
             {...usePartialSection({
               mode: "replace",
               props: { quantity: quantity + 1 },
