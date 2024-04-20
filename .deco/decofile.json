@@ -1593,7 +1593,7 @@
       "height": 50
     },
     "alerts": [
-      "Use this template to create your store at deco.cx"
+      "Sejam bem vindos ao Conexões Culturais"
     ],
     "navItems": {
       "__resolveType": "navbar"
@@ -1609,14 +1609,19 @@
         },
         "__resolveType": "resolved"
       },
-      "placeholder": "Sejam bem vindos ao Conexões Culturais"
+      "placeholder": "Buscar"
     },
     "suggestions": {
       "products": [],
       "searches": []
     },
     "logoPosition": "left",
-    "__resolveType": "site/sections/Header/Header.tsx"
+    "__resolveType": "site/sections/Header/Header.tsx",
+    "buttons": {
+      "hideSearchButton": true,
+      "hideAccountButton": true,
+      "hideWishlistButton": true
+    }
   },
   "Image Gallery - 01": {
     "title": "New collections",
