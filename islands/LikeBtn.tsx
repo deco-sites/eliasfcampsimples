@@ -18,7 +18,7 @@ export default function LikeBtn({ productId }: Props) {
     <button
       class={`btn ${liked ? "btn-primary" : "btn-secondary"}`}
       onClick={handleClick}
-    >
+    > teste
       {liked ? "Liked" : "Like"}
     </button>
   );
