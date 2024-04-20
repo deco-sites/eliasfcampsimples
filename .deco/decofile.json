@@ -3590,9 +3590,18 @@
         "title": "<p>Quem somos</p>"
       },
       {
+        "__resolveType": "site/sections/Coupon.tsx",
+        "text": "Receba o cupom exclusivo",
+        "coupon": "CULTURA10"
+      },
+      {
         "__resolveType": "Footer - 04"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "Preview /sections/Images/Carousel.tsx": {
+    "__resolveType": "site/sections/Images/Carousel.tsx",
+    "images": []
   }
 }
