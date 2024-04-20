@@ -3090,43 +3090,33 @@
         "preload": true
       },
       {
+        "__resolveType": "site/sections/HorizontalProduct.tsx",
+        "name": "nome do produto",
+        "description": "lorem ipsum",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/67ed144a-aab7-44c5-963c-0276c50c2a69",
+        "price": 99.99,
+        "url": "/"
+      },
+      {
+        "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
         "content": [
           {
             "label": "HOT SALE",
             "repeat": 30
           }
-        ],
-        "__resolveType": "site/sections/Miscellaneous/Slide.tsx"
+        ]
       },
       {
-        "link": {
-          "href": "https://github.com/deco-cx",
-          "text": "Visit our GitHub"
-        },
-        "text": "<p>Design, develop and deliver complete experiences</p>",
-        "labels": {
-          "days": "days",
-          "hours": "hours",
-          "expired": " Expired!",
-          "minutes": "minutes",
-          "seconds": "seconds"
-        },
-        "layout": {
-          "textPosition": "After counter"
-        },
-        "expiresAt": "2024-03-15T17:23:00.000Z",
-        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
-      },
-      {
+        "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
         "content": [
           {
             "label": "HOT SALE",
             "repeat": 30
           }
-        ],
-        "__resolveType": "site/sections/Miscellaneous/Slide.tsx"
+        ]
       },
       {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "layout": {
           "showArrows": true
         },
@@ -3165,13 +3155,13 @@
             }
           },
           "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
-        },
-        "__resolveType": "site/sections/Product/ProductShelf.tsx"
+        }
       },
       {
         "__resolveType": "Shoppable Banner - 01"
       },
       {
+        "__resolveType": "site/sections/Category/CategoryGrid.tsx",
         "list": [
           {
             "href": "/",
@@ -3206,10 +3196,10 @@
             "textPosition": "bottom",
             "textAlignment": "left"
           }
-        },
-        "__resolveType": "site/sections/Category/CategoryGrid.tsx"
+        }
       },
       {
+        "__resolveType": "site/sections/Product/ShelfWithImage.tsx",
         "image": {
           "alt": "Collection Image",
           "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/165c770b-cbbc-48c0-81ad-c732d527c77c",
@@ -3262,10 +3252,10 @@
             "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
           },
           "__resolveType": "site/sections/Product/ProductShelf.tsx"
-        },
-        "__resolveType": "site/sections/Product/ShelfWithImage.tsx"
+        }
       },
       {
+        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
         "tabs": [
           {
             "title": "Woman",
@@ -3297,10 +3287,11 @@
         },
         "cardLayout": {
           "__resolveType": "Product Card Layout - 01"
-        },
-        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
+        }
       },
       {
+        "title": "Blogposts",
+        "__resolveType": "site/sections/Content/BlogPosts.tsx",
         "posts": [
           {
             "alt": "Item of the Summer",
@@ -3329,12 +3320,13 @@
             "author": "deco.cx",
             "description": "Lorem ipsum dolor sit amet consectetur.  Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
           }
-        ],
-        "title": "Blogposts",
-        "__resolveType": "site/sections/Content/BlogPosts.tsx"
+        ]
       },
       {
         "__resolveType": "Footer - 04"
+      },
+      {
+        "__resolveType": "Campaing Timer - Github"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"

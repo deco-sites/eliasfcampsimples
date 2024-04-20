@@ -54,39 +54,38 @@ export default function HorizontalProduct({
   price,
   url,
 }: Props) {
-return (
+  return (
     <div className="max-w-screen-xl flex container gap-4 flex-row lg:gap-8 p-10 bg-white rounded-md mt-2 mb-2 items-center">
-        <div className="flex flex-col flex-shrink-0 lg:w-1/3 items-center">
-            <div className="overflow-hidden h-36 sm:h-48">
-            <Image 
-                className={`w-full h-full hover:scale-110 object-cover transition-transform duration-300 ease-in-out`} 
-                src={image} 
-                alt={name}
-                width={100}
-                height={100}
-                />
-            </div>
-
+      <div className="flex flex-col flex-shrink-0 lg:w-1/3 items-center">
+        <div className="overflow-hidden h-36 sm:h-48">
+          <Image
+            className={`w-full h-full hover:scale-110 object-cover transition-transform duration-300 ease-in-out`}
+            src={image}
+            alt={name}
+            width={100}
+            height={100}
+          />
         </div>
-        <div className="flex flex-col w-full lg:flex-row lg:w-2/3 items-center">
-            <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center">
-                <h1 className="text-lg lg:text-xl font-bold">{name}</h1>
-                <p className="text-base-content line-clamp-4">{description}</p>
-            </div>
-            <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center">
-                <h2 className="text-lg lg:text-xl font-bold">R${price}</h2>
-                <a
-                    href={url}
-                    className="text-primary underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <button className="bg-primary text-white border font-bold p-2 rounded h-7 btn no-animatio mt-4 md:mt-0">
-                        Adicionar ao carrinho
-                    </button>
-                </a>
-            </div>
+      </div>
+      <div className="flex flex-col w-full lg:flex-row lg:w-2/3 items-center">
+        <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center">
+          <h1 className="text-lg lg:text-xl font-bold">{name}</h1>
+          <p className="text-base-content line-clamp-4">{description}</p>
         </div>
+        <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center">
+          <h2 className="text-lg lg:text-xl font-bold">R${price}</h2>
+          <a
+            href={url}
+            className="text-primary underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-primary text-white border font-bold p-2 rounded h-7 btn no-animatio mt-4 md:mt-0">
+              Adicionar ao carrinho
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
-);
+  );
 }
