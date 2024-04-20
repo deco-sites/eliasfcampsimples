@@ -3482,7 +3482,7 @@
       "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/53df7126-3640-4820-a872-699a14db0c4a"
     },
     "theme": {
-      "__resolveType": "Fashion theme"
+      "__resolveType": "My Theme"
     },
     "global": [
       {
@@ -3638,5 +3638,23 @@
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "My Theme": {
+    "__resolveType": "site/sections/Theme/Theme.tsx",
+    "buttonStyle": {
+      "--border-btn": "1px",
+      "--rounded-btn": "0.2rem",
+      "--btn-focus-scale": "0.9",
+      "--animation-btn": "0.25s"
+    },
+    "mainColors": {
+      "base-100": "#EEEEEE",
+      "primary": "#4F6F52",
+      "secondary": "#739072",
+      "tertiary": "#dbc1a9",
+      "neutral": "#93b082",
+      "success": "#59bc52",
+      "warning": "#d4a011"
+    }
   }
 }
