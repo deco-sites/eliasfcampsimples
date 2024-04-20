@@ -3610,5 +3610,33 @@
   "Preview /sections/Images/Carousel.tsx": {
     "__resolveType": "site/sections/Images/Carousel.tsx",
     "images": []
+  },
+  "pages-Culturas-291315": {
+    "name": "Culturas",
+    "path": "/culturas",
+    "sections": [
+      {
+        "noIndexing": false,
+        "__resolveType": "website/sections/Seo/Seo.tsx"
+      },
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "__resolveType": "site/sections/Coupon.tsx",
+        "text": "Receba o cupom exclusivo",
+        "coupon": "CULTURA10"
+      },
+      {
+        "__resolveType": "Footer - 04"
+      },
+      {
+        "__resolveType": "site/sections/Weather.tsx",
+        "text": "Salvador - BA",
+        "latitude": -12.97111,
+        "longitude": -38.51083
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
