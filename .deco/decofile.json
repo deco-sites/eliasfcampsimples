@@ -3590,6 +3590,13 @@
         "title": "<p>Quem somos</p>"
       },
       {
+        "__resolveType": "site/sections/Content/ImageSection.tsx",
+        "title": "Descrição da Loja",
+        "description": "Descubra a magia das \"Conexões Culturais\" - sua porta de entrada para um mundo de diversidade, inclusão e celebração das riquezas culturais do Brasil e do mundo. Nossa loja online é muito mais do que um destino de compras; é um espaço dedicado a inspirar, educar e conectar pessoas por meio de produtos e experiências autênticas.",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/55a42225-620f-42b3-80e5-ca64cd3b8332",
+        "placement": "left"
+      },
+      {
         "__resolveType": "site/sections/Coupon.tsx",
         "text": "Receba o cupom exclusivo",
         "coupon": "CULTURA10"
