@@ -3616,11 +3616,17 @@
     "path": "/culturas",
     "sections": [
       {
-        "noIndexing": false,
-        "__resolveType": "website/sections/Seo/Seo.tsx"
+        "__resolveType": "website/sections/Seo/Seo.tsx",
+        "noIndexing": false
       },
       {
         "__resolveType": "Header - 01"
+      },
+      {
+        "__resolveType": "site/sections/Weather.tsx",
+        "text": "Salvador - BA",
+        "latitude": -12.97111,
+        "longitude": -38.51083
       },
       {
         "__resolveType": "site/sections/Coupon.tsx",
@@ -3629,12 +3635,6 @@
       },
       {
         "__resolveType": "Footer - 04"
-      },
-      {
-        "__resolveType": "site/sections/Weather.tsx",
-        "text": "Salvador - BA",
-        "latitude": -12.97111,
-        "longitude": -38.51083
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
