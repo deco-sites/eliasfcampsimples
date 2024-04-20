@@ -1,5 +1,6 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import LikeBtn from "../islands/LikeBtn.tsx";
 
 export interface Props {
   name: string;
@@ -83,7 +84,9 @@ export default function HorizontalProduct({
             <button className="bg-primary text-white border font-bold p-2 rounded h-7 btn no-animatio mt-4 md:mt-0">
               Adicionar ao carrinho
             </button>
+            
           </a>
+          <LikeBtn productId="1" />
         </div>
       </div>
     </div>

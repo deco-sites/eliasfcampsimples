@@ -2,6 +2,7 @@ import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
+
 export interface Props {
   title: string;
   images: ImageWidget[];
