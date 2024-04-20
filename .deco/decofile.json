@@ -3556,12 +3556,12 @@
     "seo": {
       "type": "website",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
-      "title": "Storefront",
+      "title": "Conexões Culturais",
       "jsonLDs": [],
       "noIndexing": false,
-      "description": "Improve your page performance with deco.cx",
-      "titleTemplate": "%s | deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
+      "description": "Descubra a magia das \"Conexões Culturais\" - sua porta de entrada para um mundo de diversidade, inclusão e celebração das riquezas culturais do Brasil e além. Nossa loja online é muito mais do que um destino de compras; é um espaço dedicado a inspirar, educar e conectar pessoas por meio de produtos e experiências autênticas.  Explorando nossa variedade de produtos e experiências, você encontrará:  Culinária Internacional: Delicie-se com uma jornada culinária ao redor do mundo, com ingredientes autênticos, especiarias exóticas e receitas tradicionais cuidadosamente selecionadas. Aventure-se em nossos kits de ingredientes e participe de workshops ao vivo conduzidos por chefs locais, onde você aprenderá a preparar pratos típicos de diferentes países, tudo no conforto da sua própria cozinha.  Artes e Artesanato: Deixe-se encantar por nossa coleção de artefatos artesanais únicos, cada um contando uma história de habilidade, tradição e cultura. De esculturas a pinturas, de máscaras tribais a tecelagens e cerâmicas, cada peça foi meticulosamente criada por talentosos artistas locais de diversos cantos do mundo, trazendo consigo a essência e a beleza de suas respectivas culturas.  Moda e Acessórios: Vista-se com estilo e significado com nossa seleção de roupas, acessórios e joias inspiradas nas tradições de diferentes culturas. De roupas étnicas a lenços bordados à mão, de bolsas de couro artesanais a joias exóticas, cada peça foi cuidadosamente projetada por designers locais apaixonados por preservar e valorizar as técnicas de fabricação tradicionais, oferecendo a você a oportunidade de incorporar um toque de autenticidade cultural ao seu guarda-roupa.  Em \"Conexões Culturais\", não apenas oferecemos produtos excepcionais, mas também criamos uma comunidade vibrante e inclusiva, onde as pessoas podem aprender, compartilhar e se conectar por meio de experiências culturais significativas. Junte-se a nós nesta jornada emocionante de descoberta e celebração da diversidade cultural, enquanto nos esforçamos para construir pontes entre os corações e as mentes de pessoas de todo o mundo.",
+      "titleTemplate": "%s | Conexões Culturais",
+      "descriptionTemplate": "%s | Conexões Culturais"
     },
     "theme": {
       "__resolveType": "Fashion theme"
