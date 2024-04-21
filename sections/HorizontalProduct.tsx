@@ -88,7 +88,7 @@ export default function HorizontalProduct({
         </div>
       </div>
       <div className="flex justify-end absolute right-5 top-5">
-        <LikeBtn productId="1" />
+        <LikeBtn productId="2" />
       </div>
     </div>
   );
