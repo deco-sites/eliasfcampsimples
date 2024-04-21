@@ -19,6 +19,7 @@ import * as $Header_Cart_wake from "./islands/Header/Cart/wake.tsx";
 import * as $Header_Drawers from "./islands/Header/Drawers.tsx";
 import * as $Header_Searchbar from "./islands/Header/Searchbar.tsx";
 import * as $LikeBtn from "./islands/LikeBtn.tsx";
+import * as $LikesTotalHeader from "./islands/LikesTotalHeader.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
@@ -51,6 +52,7 @@ const manifest = {
     "./islands/Header/Drawers.tsx": $Header_Drawers,
     "./islands/Header/Searchbar.tsx": $Header_Searchbar,
     "./islands/LikeBtn.tsx": $LikeBtn,
+    "./islands/LikesTotalHeader.tsx": $LikesTotalHeader,
     "./islands/Newsletter.tsx": $Newsletter,
     "./islands/OutOfStock.tsx": $OutOfStock,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,

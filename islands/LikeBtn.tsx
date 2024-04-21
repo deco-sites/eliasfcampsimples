@@ -11,15 +11,23 @@ export interface Props {
 export default function LikeBtn({ productId }: Props) {
   const liked = useSignal(false);
   const quantity = useSignal(0);
+  
 
   useEffect(() => {
     const updateTotals = async () => {
-      const totalLikesProduct = await invoke["deco-sites/eliasfcampsimples"]
-        .loaders
+        const totalLikesProduct = await invoke["site"].loaders
         .totalLikesProduct({ productId });
+
+        const totalLikes = await invoke["site"].loaders
+        .totalLikes();
+
+        total.value = totalLikes.total;
+
+        quantity.value = totalLikesProduct.product;
     };
 
     updateTotals();
+    setInterval(updateTotals, 30000);
   }, []);
 
   const handleClick = async (e: MouseEvent) => {
@@ -27,15 +35,16 @@ export default function LikeBtn({ productId }: Props) {
     liked.value = true;
     quantity.value += 1;
 
-    await invoke["deco-sites/eliasfcampsimples"].actions.sendLikes({
-      productId: productId,
+    const like = await invoke["site"].actions.sendLikes({
+        productId: productId,
     });
 
-    const totalLikesProduct = await invoke["deco-sites/eliasfcampsimples"]
-      .loaders
-      .totalLikesProduct({ productId });
+    const totalLikes = await invoke["site"].loaders
+      .totalLikes();
 
-    quantity.value = totalLikesProduct.product;
+    total.value = totalLikes.total;
+
+    quantity.value = like.product;
   };
 
   return (
@@ -48,6 +57,7 @@ export default function LikeBtn({ productId }: Props) {
           ? <Icon id="MoodSmile" width={24} height={24} />
           : <Icon id="MoodCheck" width={24} height={24} />}
         <span className="text-black">{quantity.value}</span>
+        <span className="sr-only"> {total}</span>
       </button>
     </>
   );

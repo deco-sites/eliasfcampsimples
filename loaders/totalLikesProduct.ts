@@ -20,5 +20,7 @@ export default async function totalLikesProduct(
     },
   );
 
-  return response.json();
+  return (
+    response.json()
+  );
 }
