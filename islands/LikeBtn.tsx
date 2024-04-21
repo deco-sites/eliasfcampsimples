@@ -14,7 +14,8 @@ export default function LikeBtn({ productId }: Props) {
 
   useEffect(() => {
     const updateTotals = async () => {
-      const totalLikesProduct = await invoke["deco-sites/eliasfcampsimples"].loaders
+      const totalLikesProduct = await invoke["deco-sites/eliasfcampsimples"]
+        .loaders
         .totalLikesProduct({ productId });
     };
 
@@ -30,11 +31,11 @@ export default function LikeBtn({ productId }: Props) {
       productId: productId,
     });
 
-    const totalLikesProduct = await invoke["deco-sites/eliasfcampsimples"].loaders
-    .totalLikesProduct({ productId });
+    const totalLikesProduct = await invoke["deco-sites/eliasfcampsimples"]
+      .loaders
+      .totalLikesProduct({ productId });
 
     quantity.value = totalLikesProduct.product;
-
   };
 
   return (
