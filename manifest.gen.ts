@@ -2,70 +2,6 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-<<<<<<< HEAD
-import * as $$$$$$$$$0 from "./actions/sendLikes.tsx";
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
-import * as $$$2 from "./loaders/availableIcons.ts";
-import * as $$$3 from "./loaders/icons.ts";
-import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
-import * as $$$1 from "./loaders/List/Sections.tsx";
-import * as $$$4 from "./loaders/totalLikes.ts";
-import * as $$$5 from "./loaders/totalLikesProduct.ts";
-import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
-import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
-import * as $$$$$$2 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
-import * as $$$$$$3 from "./sections/Cards/ImageCardsCarousel.tsx";
-import * as $$$$$$4 from "./sections/Cards/ImageCardsCarouselWithImage.tsx";
-import * as $$$$$$5 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$6 from "./sections/Category/CategoryGrid.tsx";
-import * as $$$$$$7 from "./sections/Category/CategoryList.tsx";
-import * as $$$$$$8 from "./sections/Content/Benefits.tsx";
-import * as $$$$$$9 from "./sections/Content/BlogPosts.tsx";
-import * as $$$$$$10 from "./sections/Content/CallToAction.tsx";
-import * as $$$$$$11 from "./sections/Content/Faq.tsx";
-import * as $$$$$$12 from "./sections/Content/Features.tsx";
-import * as $$$$$$13 from "./sections/Content/Hero.tsx";
-import * as $$$$$$14 from "./sections/Content/ImageSection.tsx";
-import * as $$$$$$15 from "./sections/Content/Intro.tsx";
-import * as $$$$$$16 from "./sections/Content/Logos.tsx";
-import * as $$$$$$17 from "./sections/Content/Partners.tsx";
-import * as $$$$$$18 from "./sections/Content/RichText.tsx";
-import * as $$$$$$19 from "./sections/Content/Table.tsx";
-import * as $$$$$$20 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$21 from "./sections/Content/TextWithImage.tsx";
-import * as $$$$$$22 from "./sections/Coupon.tsx";
-import * as $$$$$$23 from "./sections/Footer.tsx";
-import * as $$$$$$24 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$25 from "./sections/Gallery.tsx";
-import * as $$$$$$26 from "./sections/Header/Header.tsx";
-import * as $$$$$$27 from "./sections/HorizontalProduct.tsx";
-import * as $$$$$$28 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$29 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$30 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$31 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$32 from "./sections/ItWorks.tsx";
-import * as $$$$$$33 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$34 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$35 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$36 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$37 from "./sections/Miscellaneous/Slide.tsx";
-import * as $$$$$$38 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$39 from "./sections/PartialImageGallery.tsx";
-import * as $$$$$$40 from "./sections/Product/ImageGalleryFrontBack.tsx";
-import * as $$$$$$41 from "./sections/Product/NotFound.tsx";
-import * as $$$$$$42 from "./sections/Product/NotFoundChallenge.tsx";
-import * as $$$$$$43 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$44 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$45 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$46 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$47 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$48 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$49 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$50 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$51 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$52 from "./sections/Weather.tsx";
-=======
 import * as $$$$$$$$$$0 from "./actions/sendLikes.tsx";
 import * as $$$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$$1 from "./apps/site.ts";
@@ -128,7 +64,6 @@ import * as $$$$$$$49 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$$50 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$$51 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$$52 from "./sections/Weather.tsx";
->>>>>>> d297464c22d39ef3e4ff5befaaebe317ccfa695c
 
 const manifest = {
   "loaders": {
@@ -196,9 +131,6 @@ const manifest = {
   },
   "actions": {
     "site/actions/sendLikes.tsx": $$$$$$$$$$0,
-  },
-  "actions": {
-    "site/actions/sendLikes.tsx": $$$$$$$$$0,
   },
   "apps": {
     "site/apps/decohub.ts": $$$$$$$$$$$$0,
