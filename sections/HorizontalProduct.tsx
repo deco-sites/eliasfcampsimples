@@ -56,8 +56,8 @@ export default function HorizontalProduct({
   url,
 }: Props) {
   return (
-    <div className="max-w-screen-xl flex container gap-4 flex-row lg:gap-8 p-10 bg-white rounded-md mt-2 mb-2 items-center">
-      <div className="flex flex-col flex-shrink-0 lg:w-1/3 items-center">
+    <div className="max-w-screen-xl flex container gap-4 flex-row lg:gap-8 p-10 md:p-5 bg-white rounded-md mt-2 mb-2 relative">
+      <div className="flex flex-col flex-shrink-0 md:w-1/2 lg:w-1/3 items-center">
         <div className="overflow-hidden h-36 sm:h-48">
           <Image
             className={`w-full h-full hover:scale-110 object-cover transition-transform duration-300 ease-in-out`}
@@ -68,12 +68,12 @@ export default function HorizontalProduct({
           />
         </div>
       </div>
-      <div className="flex flex-col w-full lg:flex-row lg:w-2/3 items-center">
+      <div className="flex flex-col w-full lg:flex-row md:w-1/2 lg:w-2/3 relative">
         <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center">
           <h1 className="text-lg lg:text-xl font-bold">{name}</h1>
           <p className="text-base-content line-clamp-4">{description}</p>
         </div>
-        <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center">
+        <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center relative">
           <h2 className="text-lg lg:text-xl font-bold">R${price}</h2>
           <a
             href={url}
@@ -81,13 +81,14 @@ export default function HorizontalProduct({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-primary text-white border font-bold p-2 rounded h-7 btn no-animatio mt-4 md:mt-0">
+            <button className="bg-primary hover:bg-secondary text-white border font-bold p-2 rounded h-7 btn no-animatio mt-4 md:mt-0">
               Adicionar ao carrinho
             </button>
-            
           </a>
-          <LikeBtn productId="1" />
         </div>
+      </div>
+      <div className="flex justify-end absolute right-5 top-5">
+        <LikeBtn productId="1" />
       </div>
     </div>
   );
