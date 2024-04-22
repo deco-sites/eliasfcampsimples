@@ -3245,7 +3245,6 @@
               "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/67ed144a-aab7-44c5-963c-0276c50c2a69",
               "price": 99.99,
               "url": "/",
-              "title": "teste",
               "products": {
                 "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
                 "props": {
@@ -3254,7 +3253,8 @@
                   "term": "camisa",
                   "query": "camisetas"
                 }
-              }
+              },
+              "title": "UTM"
             },
             {
               "__resolveType": "site/sections/PartialImageGallery.tsx",
@@ -3500,16 +3500,8 @@
             }
           ],
           "rule": {
-            "__resolveType": "website/matchers/queryString.ts",
-            "conditions": [
-              {
-                "case": {
-                  "type": "Equals",
-                  "value": "promo"
-                },
-                "param": "utm"
-              }
-            ]
+            "__resolveType": "site/matchers/utm.ts",
+            "utm": "promo"
           }
         },
         {
