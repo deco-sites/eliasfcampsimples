@@ -1,13 +1,12 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import LikeBtn from "../islands/LikeBtn.tsx";
+import type { Product } from "apps/commerce/types.ts"; 
+import { useOffer } from "../sdk/useOffer.ts";
 
 export interface Props {
-  name: string;
-  description: string;
-  image: ImageWidget;
-  price: number;
-  url: string;
+  title: string;
+  products?: Product[] | null;
 }
 
 export function ErrorFallback(error: Error) {
@@ -49,47 +48,80 @@ export function LoadingFallback() {
 }
 
 export default function HorizontalProduct({
-  name,
-  description,
-  image,
-  price,
-  url,
+  products,
+  title,
 }: Props) {
+  if (!products) {
+    return <LoadingFallback />;
+  }
+
+  function formatCurrency(amount: number, prefix = "R$ ") {
+    const value = new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    })
+      .format(amount)
+      .replace(/R\$\s{1}/g, prefix);
+    return value;
+  }
+
   return (
-    <div className="max-w-screen-xl flex container gap-4 flex-row lg:gap-8 p-10 md:p-5 bg-white rounded-md mt-2 mb-2 relative">
-      <div className="flex flex-col flex-shrink-0 md:w-1/2 lg:w-1/3 items-center">
-        <div className="overflow-hidden h-36 sm:h-48">
-          <Image
-            className={`w-full h-full hover:scale-110 object-cover transition-transform duration-300 ease-in-out`}
-            src={image}
-            alt={name}
-            width={100}
-            height={100}
-          />
+    <div className="max-w-screen-xl flex container gap-4 lg:gap-8 p-10 md:p-5 bg-white rounded-md mt-2 mb-2 relative">
+      <h1 className="text-2xl font-bold">{title}</h1>
+      <div className="flex flex-row gap-4 overflow-x-auto">
+      {products?.map((product) => {
+        const productID = product.productID;
+        const imageUrl = "https://via.placeholder.com/150";
+        const productName = product.name;
+        const productDescription = product.description;
+        const productUrl = product.url;
+        
+        const { listPrice, price } = useOffer(product.offers);
+        return (
+          <div>
+          <div className="flex flex-col flex-shrink-0 md:w-1/2 lg:w-1/3 items-center">
+            <div className="overflow-hidden h-36 sm:h-48">
+              <Image
+                className={`w-full h-full hover:scale-110 object-cover transition-transform duration-300 ease-in-out`}
+                src={imageUrl}
+                alt={productName}
+                width={100}
+                height={100}
+              />
+            </div>
+          </div>
+          <div className="flex flex-col w-full lg:flex-row md:w-1/2 lg:w-2/3 relative">
+            <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center">
+              <h1 className="text-lg lg:text-xl font-bold">{productName}</h1>
+              <p className="text-base-content line-clamp-4">{productDescription}</p>
+            </div>
+            <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center relative">
+              {!!listPrice && <s>{formatCurrency(listPrice)}</s>}
+
+              {!!price && (
+                <span className="text-gray-900 font-bold text-center text-xl">
+                  {formatCurrency(price)}
+                </span>
+              )}
+              <a
+                href={productUrl}
+                className="text-primary underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-primary hover:bg-secondary text-white border font-bold p-2 rounded h-7 btn no-animatio mt-4 md:mt-0">
+                  Adicionar ao carrinho
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="flex justify-end absolute right-5 top-5">
+            <LikeBtn productId="2" />
+          </div>
         </div>
+        )})}
       </div>
-      <div className="flex flex-col w-full lg:flex-row md:w-1/2 lg:w-2/3 relative">
-        <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center">
-          <h1 className="text-lg lg:text-xl font-bold">{name}</h1>
-          <p className="text-base-content line-clamp-4">{description}</p>
-        </div>
-        <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center relative">
-          <h2 className="text-lg lg:text-xl font-bold">R${price}</h2>
-          <a
-            href={url}
-            className="text-primary underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="bg-primary hover:bg-secondary text-white border font-bold p-2 rounded h-7 btn no-animatio mt-4 md:mt-0">
-              Adicionar ao carrinho
-            </button>
-          </a>
-        </div>
-      </div>
-      <div className="flex justify-end absolute right-5 top-5">
-        <LikeBtn productId="2" />
-      </div>
+      
     </div>
   );
 }
