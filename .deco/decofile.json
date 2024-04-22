@@ -3505,16 +3505,9 @@
               {
                 "case": {
                   "type": "Equals",
-                  "value": "1"
-                },
-                "param": "utm"
-              },
-              {
-                "case": {
-                  "type": "Equals",
                   "value": "promo"
                 },
-                "param": "camp"
+                "param": "utm"
               }
             ]
           }
