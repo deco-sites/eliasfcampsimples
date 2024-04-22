@@ -1,12 +1,12 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import LikeBtn from "../islands/LikeBtn.tsx";
-import type { Product } from "apps/commerce/types.ts"; 
+import { productFlag } from "../flags/productFlag.ts";
 import { useOffer } from "../sdk/useOffer.ts";
 
 export interface Props {
   title: string;
-  products?: Product[] | null;
+  products?: productFlag
 }
 
 export function ErrorFallback(error: Error) {
@@ -66,24 +66,26 @@ export default function HorizontalProduct({
   }
 
   return (
-    <div className="max-w-screen-xl flex container gap-4 lg:gap-8 p-10 md:p-5 bg-white rounded-md mt-2 mb-2 relative">
-      <h1 className="text-2xl font-bold">{title}</h1>
-      <div className="flex flex-row gap-4 overflow-x-auto">
+    <div className="max-w-5xl container relative mt-5 mt-5">
+      <div className="flex flex-row items-center justify-center text-center mt-4 mb-4">
+        <h1 className="text-2xl font-light leading-8 lg:leading-10 text-base-content lg:text-3xl">{title}</h1>
+      </div>
+      
       {products?.map((product) => {
         const productID = product.productID;
-        const imageUrl = "https://via.placeholder.com/150";
+        const imageUrl = product.image;
         const productName = product.name;
         const productDescription = product.description;
         const productUrl = product.url;
         
         const { listPrice, price } = useOffer(product.offers);
         return (
-          <div>
-          <div className="flex flex-col flex-shrink-0 md:w-1/2 lg:w-1/3 items-center">
-            <div className="overflow-hidden h-36 sm:h-48">
+          <div className="flex flex-row gap-4 overflow-x-auto gap-4 lg:gap-8 p-10 md:p-5 bg-white rounded-md mt-2 mb-2 relative">
+          <div className="flex flex-col w-full md:w-1/2 items-center">
+            <div className="overflow-hidden md:h-52">
               <Image
                 className={`w-full h-full hover:scale-110 object-cover transition-transform duration-300 ease-in-out`}
-                src={imageUrl}
+                src={imageUrl[0].url}
                 alt={productName}
                 width={100}
                 height={100}
@@ -91,11 +93,11 @@ export default function HorizontalProduct({
             </div>
           </div>
           <div className="flex flex-col w-full lg:flex-row md:w-1/2 lg:w-2/3 relative">
-            <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center">
+            <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center items-start">
               <h1 className="text-lg lg:text-xl font-bold">{productName}</h1>
               <p className="text-base-content line-clamp-4">{productDescription}</p>
             </div>
-            <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center relative">
+            <div className="flex flex-col gap-2 w-full lg:w-1/2 content-center relative items-start">
               {!!listPrice && <s>{formatCurrency(listPrice)}</s>}
 
               {!!price && (
@@ -116,12 +118,10 @@ export default function HorizontalProduct({
             </div>
           </div>
           <div className="flex justify-end absolute right-5 top-5">
-            <LikeBtn productId="2" />
+            <LikeBtn productId={productID} />
           </div>
         </div>
         )})}
       </div>
-      
-    </div>
   );
 }
