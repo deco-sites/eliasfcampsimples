@@ -1,4 +1,4 @@
-import Component from "../components/minicart/vtex/Cart.tsx";
+import Component from "../components/minicart/vtex/CartPage.tsx";
 
 function CartIsland() {
   return <Component />;
