@@ -3164,7 +3164,12 @@
         "jsonLD": {
           "__resolveType": "PLP Loader"
         },
-        "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+        "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+        "title": "Conexões Culturais - %s",
+        "description": "Conexões Culturais - %s",
+        "type": "website",
+        "titleTemplate": "Conexões Culturais - %s",
+        "descriptionTemplate": "Conexões Culturais - %s"
       },
       {
         "__resolveType": "Header - 01"
@@ -3532,7 +3537,10 @@
           "value": [
             {
               "noIndexing": false,
-              "__resolveType": "website/sections/Seo/Seo.tsx"
+              "__resolveType": "website/sections/Seo/Seo.tsx",
+              "title": "Conexões Culturais",
+              "description": "Conexões Culturais",
+              "type": "website"
             },
             {
               "__resolveType": "Header - 01"
@@ -3800,7 +3808,11 @@
         "jsonLDs": [
           {}
         ],
-        "__resolveType": "commerce/sections/Seo/SeoPDP.tsx"
+        "__resolveType": "commerce/sections/Seo/SeoPDP.tsx",
+        "title": " %s - Conexões Culturais ",
+        "titleTemplate": " %s - Conexões Culturais ",
+        "description": " %s - Conexões Culturais ",
+        "descriptionTemplate": " %s - Conexões Culturais "
       },
       {
         "__resolveType": "Header - 01"
