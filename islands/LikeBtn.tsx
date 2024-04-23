@@ -5,6 +5,7 @@ import { invoke } from "deco-sites/eliasfcampsimples/runtime.ts";
 import { useEffect } from "preact/hooks";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import { ComponentType } from "preact";
+import { sendEvent } from "../sdk/analytics.tsx";
 
 export interface Props {
   productId: string;
@@ -50,6 +51,7 @@ export default function LikeBtn({ productId }: Props) {
 
     quantity.value = like.product;
 
+
     toast.success('Produto curtido!', {
       position: "bottom-right",
       autoClose: 5000,
@@ -60,6 +62,15 @@ export default function LikeBtn({ productId }: Props) {
       progress: undefined,
       theme: "light",
       transition: Bounce
+    });
+
+    sendEvent({
+      name: "post_score",
+      params: {
+        score: total,
+        // level: 5,
+        // character: productID,
+      },
     });
   };
 
