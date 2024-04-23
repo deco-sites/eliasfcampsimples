@@ -3584,24 +3584,6 @@
               "quantity": 3
             },
             {
-              "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
-              "content": [
-                {
-                  "label": "HOT SALE",
-                  "repeat": 30
-                }
-              ]
-            },
-            {
-              "__resolveType": "site/sections/Miscellaneous/Slide.tsx",
-              "content": [
-                {
-                  "label": "HOT SALE",
-                  "repeat": 30
-                }
-              ]
-            },
-            {
               "__resolveType": "site/sections/Product/ProductShelf.tsx",
               "layout": {
                 "showArrows": true
@@ -3644,105 +3626,44 @@
               }
             },
             {
-              "__resolveType": "Shoppable Banner - 01"
-            },
-            {
-              "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-              "list": [
+              "__resolveType": "site/sections/Images/ImageGallery.tsx",
+              "layout": {
+                "headerAlignment": "left",
+                "mobile": "Asymmetric",
+                "desktop": "Asymmetric"
+              },
+              "title": "Carnaval Brasileiro",
+              "banners": [
                 {
-                  "href": "/",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/01c01ba9-ac16-4371-82ca-b93d17545f9c",
-                  "label": "Your Collection",
-                  "buttonText": "Explore collection"
+                  "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/a0767305-dc5a-4c8b-8e43-4b3e29edfdee",
+                  "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/a0767305-dc5a-4c8b-8e43-4b3e29edfdee",
+                  "alt": "carnaval",
+                  "href": "carnaval"
                 },
                 {
-                  "href": "/",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/9b80d57d-64b0-4eef-a3cd-fa8daafaae9c",
-                  "label": "Your Collection",
-                  "buttonText": "Explore collection"
+                  "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/8b7a6fa6-f817-4746-a67b-ba861b50e198",
+                  "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/8b7a6fa6-f817-4746-a67b-ba861b50e198",
+                  "alt": "carnaval",
+                  "href": "carnaval"
                 },
                 {
-                  "href": "/",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/ed4c0eb3-96ab-484f-b293-e91d196a5063",
-                  "label": "Your Collection",
-                  "buttonText": "Explore collection"
+                  "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/94965169-f5b6-4b0b-86e7-b6acc23232b6",
+                  "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/94965169-f5b6-4b0b-86e7-b6acc23232b6",
+                  "alt": "carnaval",
+                  "href": "carnaval"
                 },
                 {
-                  "href": "/",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/b9882ff7-3dbc-43e4-9813-5cec23c012cd",
-                  "label": "Your Collection",
-                  "buttonText": "Explore collection"
+                  "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/3a4d92f2-2662-4ea8-9ad7-032ef6b2e10b",
+                  "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7697/3a4d92f2-2662-4ea8-9ad7-032ef6b2e10b",
+                  "alt": "carnaval",
+                  "href": "carnaval"
                 }
               ],
-              "header": {
-                "title": "Explore Our Categories"
-              },
-              "layout": {
-                "categoryCard": {
-                  "textPosition": "bottom",
-                  "textAlignment": "left"
-                }
-              }
+              "description": "Imagens do carnaval Brasileiro"
             },
             {
-              "__resolveType": "site/sections/Product/ShelfWithImage.tsx",
-              "image": {
-                "alt": "Collection Image",
-                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/165c770b-cbbc-48c0-81ad-c732d527c77c",
-                "href": "/feminino"
-              },
-              "section": {
-                "title": "Summer Vibes",
-                "layout": {
-                  "showArrows": true,
-                  "headerfontSize": "Normal",
-                  "headerAlignment": "center",
-                  "numberOfSliders": {
-                    "mobile": 1,
-                    "desktop": 1
-                  }
-                },
-                "products": {
-                  "props": {
-                    "sort": "price:desc",
-                    "count": 3,
-                    "query": "camisa"
-                  },
-                  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                },
-                "cardLayout": {
-                  "layout": {
-                    "hide": {
-                      "allPrices": false,
-                      "favoriteIcon": true,
-                      "installments": true,
-                      "productDescription": true
-                    },
-                    "basics": {
-                      "oldPriceSize": "Normal",
-                      "contentAlignment": "Left"
-                    },
-                    "onMouseOver": {
-                      "card": "None",
-                      "image": "Change image",
-                      "showCta": true,
-                      "showCardShadow": false,
-                      "showSkuSelector": true,
-                      "showFavoriteIcon": false
-                    },
-                    "elementsPositions": {
-                      "skuSelector": "Bottom",
-                      "favoriteIcon": "Top right"
-                    }
-                  },
-                  "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
-                },
-                "__resolveType": "site/sections/Product/ProductShelf.tsx"
-              }
-            },
-            {
-              "title": "Best Sellers",
               "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+              "title": "Best Sellers",
               "tabs": [
                 {
                   "title": "Woman",
@@ -3810,9 +3731,6 @@
             },
             {
               "__resolveType": "Footer - 04"
-            },
-            {
-              "__resolveType": "Campaing Timer - Github"
             }
           ],
           "rule": {
