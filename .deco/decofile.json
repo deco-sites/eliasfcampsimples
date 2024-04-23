@@ -3781,24 +3781,12 @@
         "__resolveType": "site/sections/Product/ProductDetails.tsx"
       },
       {
-        "title": "You may also like",
-        "products": {
-          "slug": {
-            "param": "slug",
-            "__resolveType": "website/functions/requestToParam.ts"
-          },
-          "crossSelling": "whosawalsosaw",
-          "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
-        },
-        "__resolveType": "site/sections/Product/ProductShelf.tsx"
-      },
-      {
         "__resolveType": "site/sections/HorizontalProduct.tsx",
         "title": "Produtos Relacionados",
         "products": {
           "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts",
-          "crossSelling": "whosawalsobought",
-          "count": 1
+          "crossSelling": "suggestions",
+          "count": 2
         }
       },
       {
