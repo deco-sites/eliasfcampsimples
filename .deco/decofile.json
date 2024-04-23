@@ -3596,7 +3596,8 @@
                   "sort": "release:desc",
                   "count": 8,
                   "fuzzy": "automatic",
-                  "facets": "O=OrderByReleaseDateDESC"
+                  "facets": "O=OrderByReleaseDateDESC",
+                  "query": " "
                 },
                 "crossSelling": "similars",
                 "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -3785,8 +3786,8 @@
         "title": "Produtos Relacionados",
         "products": {
           "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts",
-          "crossSelling": "suggestions",
-          "count": 2
+          "crossSelling": "whosawalsosaw",
+          "count": 1
         }
       },
       {
