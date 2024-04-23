@@ -3588,7 +3588,8 @@
               "layout": {
                 "showArrows": true,
                 "numberOfSliders": {
-                  "mobile": 1
+                  "mobile": 1,
+                  "desktop": 4
                 }
               },
               "products": {
@@ -3677,6 +3678,12 @@
                   "sort": "orders:desc",
                   "count": 8,
                   "query": " "
+                }
+              },
+              "layout": {
+                "numberOfSliders": {
+                  "desktop": 4,
+                  "mobile": 1
                 }
               }
             },
@@ -3790,7 +3797,7 @@
             "__resolveType": "website/functions/requestToParam.ts",
             "param": "slug"
           },
-          "count": 5
+          "count": 1
         }
       },
       {
