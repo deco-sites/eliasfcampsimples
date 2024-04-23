@@ -3793,6 +3793,15 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx"
       },
       {
+        "__resolveType": "site/sections/HorizontalProduct.tsx",
+        "title": "Produtos Relacionados",
+        "products": {
+          "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts",
+          "crossSelling": "whosawalsobought",
+          "count": 1
+        }
+      },
+      {
         "__resolveType": "Footer - 01"
       }
     ],
