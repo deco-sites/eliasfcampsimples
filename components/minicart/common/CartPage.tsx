@@ -48,7 +48,7 @@ function CartPage({
     >
       {isEmtpy
         ? (
-          <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-6 my-6">
             <span class="font-medium text-2xl">Sua sacola está vazia</span>
             <Button
               class="btn-outline"
