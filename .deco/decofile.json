@@ -3586,13 +3586,17 @@
             {
               "__resolveType": "site/sections/Product/ProductShelf.tsx",
               "layout": {
-                "showArrows": true
+                "showArrows": true,
+                "numberOfSliders": {
+                  "mobile": 1
+                }
               },
               "products": {
                 "props": {
-                  "sort": "price:desc",
-                  "count": 6,
-                  "collection": "139"
+                  "sort": "release:desc",
+                  "count": 8,
+                  "fuzzy": "automatic",
+                  "facets": "O=OrderByReleaseDateDESC"
                 },
                 "crossSelling": "similars",
                 "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -3623,7 +3627,9 @@
                   }
                 },
                 "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
-              }
+              },
+              "title": "Novidades",
+              "description": "Os melhores lançamentos"
             },
             {
               "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -3662,39 +3668,17 @@
               "description": "Imagens do carnaval Brasileiro"
             },
             {
-              "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-              "title": "Best Sellers",
-              "tabs": [
-                {
-                  "title": "Woman",
-                  "products": {
-                    "props": {
-                      "sort": "price:desc",
-                      "count": 8,
-                      "query": "vestido"
-                    },
-                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                  }
-                },
-                {
-                  "title": "Man",
-                  "products": {
-                    "props": {
-                      "sort": "price:desc",
-                      "count": 8,
-                      "collection": "140"
-                    },
-                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                  }
+              "__resolveType": "site/sections/Product/ProductShelf.tsx",
+              "title": "Mais vendidos",
+              "products": {
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                "props": {
+                  "facets": "O=OrderByTopSaleDESC",
+                  "sort": "orders:desc",
+                  "count": 8
                 }
-              ],
-              "layout": {
-                "headerfontSize": "Large",
-                "headerAlignment": "center"
               },
-              "cardLayout": {
-                "__resolveType": "Product Card Layout - 01"
-              }
+              "description": "Os nossos mais vendidos"
             },
             {
               "__resolveType": "site/sections/Content/BlogPosts.tsx",
@@ -3965,5 +3949,16 @@
   },
   "weather": {
     "__resolveType": "decohub/apps/weather.ts"
+  },
+  "Preview vtex/loaders/intelligentSearch/productList.ts": {
+    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+    "props": {
+      "count": 10,
+      "facets": "fP:[{0} TO {999}]",
+      "sort": "release:desc"
+    }
+  },
+  "Preview vtex/loaders/intelligentSearch/suggestions.ts": {
+    "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
   }
 }
