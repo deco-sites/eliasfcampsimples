@@ -3629,8 +3629,7 @@
                 },
                 "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
               },
-              "title": "Novidades",
-              "description": "Os melhores lançamentos"
+              "title": "Novidades"
             },
             {
               "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -3676,10 +3675,10 @@
                 "props": {
                   "facets": "O=OrderByTopSaleDESC",
                   "sort": "orders:desc",
-                  "count": 8
+                  "count": 8,
+                  "query": " "
                 }
-              },
-              "description": "Os nossos mais vendidos"
+              }
             },
             {
               "__resolveType": "site/sections/Content/BlogPosts.tsx",
@@ -3787,7 +3786,11 @@
         "products": {
           "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts",
           "crossSelling": "whosawalsosaw",
-          "count": 1
+          "slug": {
+            "__resolveType": "website/functions/requestToParam.ts",
+            "param": "slug"
+          },
+          "count": 5
         }
       },
       {
