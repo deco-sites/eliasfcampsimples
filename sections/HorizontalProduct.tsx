@@ -55,6 +55,8 @@ export default function HorizontalProduct({
     return <LoadingFallback />;
   }
 
+  console.log(products);
+
   function formatCurrency(amount: number, prefix = "R$ ") {
     const value = new Intl.NumberFormat("pt-BR", {
       style: "currency",

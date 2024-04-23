@@ -3,6 +3,8 @@ import Icon from "deco-sites/eliasfcampsimples/components/ui/Icon.tsx";
 import { total } from "deco-sites/eliasfcampsimples/sdk/useTotalLikes.tsx";
 import { invoke } from "deco-sites/eliasfcampsimples/runtime.ts";
 import { useEffect } from "preact/hooks";
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import { ComponentType } from "preact";
 
 export interface Props {
   productId: string;
@@ -11,6 +13,8 @@ export interface Props {
 export default function LikeBtn({ productId }: Props) {
   const liked = useSignal(false);
   const quantity = useSignal(0);
+
+  const Toast = ToastContainer as ComponentType;
   
 
   useEffect(() => {
@@ -45,6 +49,18 @@ export default function LikeBtn({ productId }: Props) {
     total.value = totalLikes.total;
 
     quantity.value = like.product;
+
+    toast.success('Produto curtido!', {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce
+    });
   };
 
   return (
@@ -59,6 +75,7 @@ export default function LikeBtn({ productId }: Props) {
         <span className="text-black">{quantity.value}</span>
         <span className="sr-only"> {total}</span>
       </button>
+      <Toast />
     </>
   );
 }
